@@ -1,0 +1,432 @@
+
+{
+  "title": "CrowdMapper - Avoid the Crowds",
+  "description": "A web application that helps users find and report crowd levels at various locations to avoid busy places.",
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Set up project structure",
+      "description": "Initialize the project and set up the basic folder structure",
+      "status": "done",
+      "priority": "high",
+      "details": "- Set up Vite with React and TypeScript\n- Configure Tailwind CSS\n- Set up Express backend server\n- Configure PostgreSQL database connection with Drizzle ORM",
+      "test": "Ensure all npm commands work properly (dev, build, start)",
+      "subtasks": [
+        {
+          "id": "1.1",
+          "title": "Initialize frontend with Vite/React",
+          "description": "Set up React with TypeScript using Vite",
+          "status": "done",
+          "details": "Complete - Client folder set up with Vite and React"
+        },
+        {
+          "id": "1.2",
+          "title": "Configure Tailwind CSS",
+          "description": "Add and configure Tailwind CSS for styling",
+          "status": "done",
+          "details": "Complete - Tailwind configuration in place"
+        },
+        {
+          "id": "1.3",
+          "title": "Set up Express backend",
+          "description": "Create Express server structure with TypeScript",
+          "status": "done",
+          "details": "Complete - Server folder with Express configured"
+        },
+        {
+          "id": "1.4",
+          "title": "Configure database connection",
+          "description": "Set up PostgreSQL with Drizzle ORM",
+          "status": "done",
+          "details": "Complete - Database connection established with Drizzle ORM"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Create UI components library",
+      "description": "Develop reusable UI components using shadcn/ui",
+      "status": "done",
+      "priority": "high",
+      "details": "Implement various UI components including buttons, cards, sidebar, etc.",
+      "subtasks": [
+        {
+          "id": "2.1",
+          "title": "Set up shadcn/ui components",
+          "description": "Add base UI components from shadcn/ui",
+          "status": "done",
+          "details": "Complete - All core components added to /components/ui/"
+        },
+        {
+          "id": "2.2", 
+          "title": "Create custom components",
+          "description": "Build app-specific components on top of the UI library",
+          "status": "done",
+          "details": "Complete - Created Header, Sidebar, LocationCard, and other components"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Implement database schema",
+      "description": "Design and implement the database schema for the application",
+      "status": "done",
+      "priority": "high",
+      "details": "Create schema for locations, users, reviews, and check-ins",
+      "subtasks": [
+        {
+          "id": "3.1",
+          "title": "Design data models",
+          "description": "Design the data models for the application",
+          "status": "done",
+          "details": "Created schema for users, locations, reviews and check-ins"
+        },
+        {
+          "id": "3.2",
+          "title": "Set up Drizzle schema",
+          "description": "Implement the schema using Drizzle ORM",
+          "status": "done",
+          "details": "Complete - Schema implemented in shared/schema.ts"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Implement core backend API endpoints",
+      "description": "Create RESTful API endpoints for handling application data",
+      "status": "done",
+      "priority": "high",
+      "details": "Implement endpoints for locations, users, check-ins, and reviews",
+      "subtasks": [
+        {
+          "id": "4.1",
+          "title": "Create location endpoints",
+          "description": "Implement CRUD endpoints for locations",
+          "status": "done",
+          "details": "Complete - Endpoints for listing, adding, and retrieving locations"
+        },
+        {
+          "id": "4.2",
+          "title": "Create user endpoints",
+          "description": "Implement user authentication and profile endpoints",
+          "status": "done",
+          "details": "Complete - User authentication endpoints implemented"
+        },
+        {
+          "id": "4.3",
+          "title": "Create check-in endpoints",
+          "description": "Implement endpoints for checking in at locations",
+          "status": "done",
+          "details": "Complete - Check-in functionality working"
+        },
+        {
+          "id": "4.4",
+          "title": "Create review endpoints",
+          "description": "Implement endpoints for reviewing locations",
+          "status": "done",
+          "details": "Complete - Review endpoints implemented"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Implement Google Maps integration",
+      "description": "Integrate Google Maps for visualization and location selection",
+      "status": "done",
+      "priority": "high",
+      "details": "Implement map component, location search, and map markers for crowd levels",
+      "subtasks": [
+        {
+          "id": "5.1",
+          "title": "Set up Google Maps component",
+          "description": "Create a reusable map component with React Google Maps API",
+          "status": "done",
+          "details": "Complete - Map component implemented with proper typing"
+        },
+        {
+          "id": "5.2",
+          "title": "Implement custom markers",
+          "description": "Create custom markers to show crowd levels on the map",
+          "status": "done",
+          "details": "Complete - Custom markers implemented with color coding based on crowd levels"
+        },
+        {
+          "id": "5.3",
+          "title": "Add geocoding functionality",
+          "description": "Implement address lookup and reverse geocoding",
+          "status": "done",
+          "details": "Complete - Geocoding API integrated and working"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Implement main application pages",
+      "description": "Create all main application pages and their functionality",
+      "status": "done",
+      "priority": "high",
+      "details": "Implement Home, LocationDetails, and Profile pages",
+      "subtasks": [
+        {
+          "id": "6.1",
+          "title": "Create Home page",
+          "description": "Implement main page with map and sidebar",
+          "status": "done",
+          "details": "Complete - Home page with map and location listing"
+        },
+        {
+          "id": "6.2",
+          "title": "Create Location Details page",
+          "description": "Implement detailed view of a location with crowd data and reviews",
+          "status": "done",
+          "details": "Complete - Location details page with crowd level reporting, history and reviews"
+        },
+        {
+          "id": "6.3",
+          "title": "Create Profile page",
+          "description": "Implement user profile page with history and stats",
+          "status": "done",
+          "details": "Complete - Profile page with user stats and activity"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Implement check-in functionality",
+      "description": "Allow users to check-in at locations and report crowd levels",
+      "status": "done",
+      "priority": "high",
+      "details": "Implement UI and backend for crowd level reporting at locations",
+      "subtasks": [
+        {
+          "id": "7.1",
+          "title": "Create check-in UI",
+          "description": "Implement UI controls for selecting crowd level",
+          "status": "done",
+          "details": "Complete - Check-in UI with low/medium/high crowd level options"
+        },
+        {
+          "id": "7.2",
+          "title": "Implement check-in submission",
+          "description": "Submit check-ins to the server and update location data",
+          "status": "done",
+          "details": "Complete - Check-in submission and location data updates working"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Add responsive design",
+      "description": "Make the application fully responsive for all device sizes",
+      "status": "done",
+      "priority": "medium",
+      "details": "Ensure all components and pages work properly on mobile and desktop",
+      "subtasks": [
+        {
+          "id": "8.1",
+          "title": "Implement mobile layout",
+          "description": "Create mobile-specific layouts and components",
+          "status": "done",
+          "details": "Complete - Mobile layouts with action bar and menus implemented"
+        },
+        {
+          "id": "8.2",
+          "title": "Add responsive utilities",
+          "description": "Create hooks and utilities for responsive design",
+          "status": "done",
+          "details": "Complete - Added use-mobile.tsx hook for responsive behavior"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Implement data fetching with React Query",
+      "description": "Use React Query for efficient data fetching and caching",
+      "status": "done",
+      "priority": "medium",
+      "details": "Set up React Query for all API requests with proper error handling and loading states",
+      "subtasks": [
+        {
+          "id": "9.1",
+          "title": "Set up React Query provider",
+          "description": "Configure React Query client and provider",
+          "status": "done",
+          "details": "Complete - React Query set up with queryClient configuration"
+        },
+        {
+          "id": "9.2",
+          "title": "Implement query hooks",
+          "description": "Create custom hooks for data fetching operations",
+          "status": "done",
+          "details": "Complete - Implemented query hooks for locations, reviews, and check-ins"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Implement real-time updates",
+      "description": "Add real-time updates for crowd levels",
+      "status": "pending",
+      "priority": "medium",
+      "details": "Use WebSockets to provide real-time updates when crowd levels change",
+      "subtasks": [
+        {
+          "id": "10.1",
+          "title": "Set up WebSocket server",
+          "description": "Set up a WebSocket server using ws package",
+          "status": "pending",
+          "details": "Implement WebSocket server in Express backend"
+        },
+        {
+          "id": "10.2",
+          "title": "Create client WebSocket connection",
+          "description": "Implement WebSocket client connection in React",
+          "status": "pending",
+          "details": "Create a hook for WebSocket connection and event handling"
+        },
+        {
+          "id": "10.3",
+          "title": "Add real-time updates UI",
+          "description": "Update UI components to handle real-time data",
+          "status": "pending",
+          "details": "Modify components to reflect real-time changes from WebSocket"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Add user authentication",
+      "description": "Implement proper user authentication and authorization",
+      "status": "in-progress",
+      "priority": "high",
+      "details": "Add login, registration, and authentication middleware",
+      "subtasks": [
+        {
+          "id": "11.1",
+          "title": "Set up authentication middleware",
+          "description": "Implement Passport.js authentication middleware",
+          "status": "done",
+          "details": "Complete - Passport.js configured with local strategy"
+        },
+        {
+          "id": "11.2",
+          "title": "Create login/registration forms",
+          "description": "Create forms for user authentication",
+          "status": "in-progress",
+          "details": "Implementing login and registration UI components"
+        },
+        {
+          "id": "11.3",
+          "title": "Implement session management",
+          "description": "Set up session management using express-session",
+          "status": "done",
+          "details": "Complete - Session management configured with PostgreSQL store"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Add data visualization for crowd patterns",
+      "description": "Implement charts and graphs to visualize crowd patterns over time",
+      "status": "pending",
+      "priority": "low",
+      "details": "Use Recharts to create visualizations of crowd data",
+      "subtasks": [
+        {
+          "id": "12.1",
+          "title": "Create crowd history chart",
+          "description": "Implement a chart showing crowd levels over time",
+          "status": "pending",
+          "details": "Create a line chart component for historical crowd levels"
+        },
+        {
+          "id": "12.2",
+          "title": "Add time pattern analysis",
+          "description": "Analyze and display patterns in crowd levels by time of day/week",
+          "status": "pending",
+          "details": "Implement algorithms to detect patterns and visualize busy times"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Implement notifications",
+      "description": "Add a notification system for alerts about crowd levels",
+      "status": "pending",
+      "priority": "low",
+      "details": "Allow users to subscribe to locations and receive notifications about crowd changes",
+      "subtasks": [
+        {
+          "id": "13.1",
+          "title": "Create notification UI",
+          "description": "Implement UI for displaying and managing notifications",
+          "status": "pending",
+          "details": "Create notification components and indicator in header"
+        },
+        {
+          "id": "13.2",
+          "title": "Implement notification backend",
+          "description": "Create backend for storing and triggering notifications",
+          "status": "pending",
+          "details": "Set up notification storage and delivery system"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Add location favorites/bookmarks",
+      "description": "Allow users to bookmark favorite locations for quick access",
+      "status": "pending",
+      "priority": "medium",
+      "details": "Implement favorite functionality for locations with UI and backend support",
+      "subtasks": [
+        {
+          "id": "14.1",
+          "title": "Create favorite toggle UI",
+          "description": "Add UI for toggling favorite status",
+          "status": "pending",
+          "details": "Add favorite button to location cards and details page"
+        },
+        {
+          "id": "14.2",
+          "title": "Implement favorites backend",
+          "description": "Create API endpoints for managing favorites",
+          "status": "pending",
+          "details": "Implement endpoints for adding and removing favorites"
+        },
+        {
+          "id": "14.3",
+          "title": "Add favorites filter",
+          "description": "Allow filtering to show only favorite locations",
+          "status": "pending",
+          "details": "Add filter option in the sidebar for showing only favorites"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Deploy application",
+      "description": "Deploy the application to Replit",
+      "status": "done",
+      "priority": "high",
+      "details": "Configure the application for deployment on Replit",
+      "subtasks": [
+        {
+          "id": "15.1",
+          "title": "Configure deployment settings",
+          "description": "Set up build and run commands in .replit",
+          "status": "done",
+          "details": "Complete - Deployment configuration set up in .replit file"
+        },
+        {
+          "id": "15.2",
+          "title": "Set up environment variables",
+          "description": "Configure necessary environment variables for production",
+          "status": "done",
+          "details": "Complete - Environment variables configured for deployment"
+        }
+      ]
+    }
+  ]
+}
